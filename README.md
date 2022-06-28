@@ -10,7 +10,8 @@ Original Design and Code: [https://cssfx.netlify.app/](https://cssfx.netlify.app
 
 ## Live demo
 
-[https://react-cssfx.surge.sh/](https://react-cssfx.surge.sh/)
+Demo: [https://react-cssfx.surge.sh/](https://react-cssfx.surge.sh/)  
+Storybook: [https://cssfx-storybook.vercel.app/](https://cssfx-storybook.vercel.app/)
 
 ## Usage
 
