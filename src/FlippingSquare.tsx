@@ -29,8 +29,8 @@ const FlippingSquare: React.FC<FlippingSquareProps & React.HTMLProps<HTMLDivElem
   duration = "1s",
   ...others
 }) => {
-  let resolvedWidth = typeof width === "number" ? `${width}px` : width;
-  let resolvedHeight = typeof height === "number" ? `${height}px` : height;
+  const resolvedWidth = typeof width === "number" ? `${width}px` : width;
+  const resolvedHeight = typeof height === "number" ? `${height}px` : height;
 
   return (
     <div

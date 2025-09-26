@@ -26,13 +26,12 @@ const Ring: React.FC<RingProps & React.SVGProps<SVGSVGElement>> = ({
   duration = "1s",
   ...others
 }) => {
-  let resolvedWidth = typeof width === "number" ? `${width}px` : width;
-  let resolvedHeight = typeof height === "number" ? `${height}px` : height;
+  const resolvedWidth = typeof width === "number" ? `${width}px` : width;
+  const resolvedHeight = typeof height === "number" ? `${height}px` : height;
 
   return (
     <svg
       {...others}
-      crossOrigin="anonymous"
       viewBox="0 0 50 50"
       style={style}
       className={

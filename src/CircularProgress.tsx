@@ -40,13 +40,12 @@ const CircularProgress: React.FC<CircularProgressProps & React.SVGProps<SVGSVGEl
   duration = "2s",
   ...others
 }) => {
-  let resolvedWidth = typeof width === "number" ? `${width}px` : width;
-  let resolvedHeight = typeof height === "number" ? `${height}px` : height;
+  const resolvedWidth = typeof width === "number" ? `${width}px` : width;
+  const resolvedHeight = typeof height === "number" ? `${height}px` : height;
 
   return (
     <svg
       {...others}
-      crossOrigin="anonymous"
       viewBox="25 25 50 50"
       style={style}
       className={

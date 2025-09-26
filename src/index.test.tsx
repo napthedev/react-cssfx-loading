@@ -1,3 +1,5 @@
+import { render } from "@testing-library/react";
+import { describe, it, expect } from "vitest";
 import {
   BarWave,
   BouncingBalls,
@@ -13,13 +15,10 @@ import {
   Spin,
   SpinStretch,
   TwinSpin,
-} from "../src";
-
-import React from "react";
-import { render } from "@testing-library/react";
+} from "./index";
 
 describe("Render without crashing", () => {
-  [
+  const components = [
     BarWave,
     BouncingBalls,
     CircularProgress,
@@ -34,9 +33,12 @@ describe("Render without crashing", () => {
     Spin,
     SpinStretch,
     TwinSpin,
-  ].forEach(Component => {
+  ];
+
+  components.forEach((Component) => {
     it(`Render ${Component.name}`, () => {
-      render(<Component />);
+      const { container } = render(<Component />);
+      expect(container).toBeDefined();
     });
   });
 });

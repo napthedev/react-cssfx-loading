@@ -26,8 +26,8 @@ const Hypnosis: React.FC<HypnosisProps & React.HTMLProps<HTMLDivElement>> = ({
   duration = "1.2s",
   ...others
 }) => {
-  let resolvedWidth = typeof width === "number" ? `${width}px` : width;
-  let resolvedHeight = typeof height === "number" ? `${height}px` : height;
+  const resolvedWidth = typeof width === "number" ? `${width}px` : width;
+  const resolvedHeight = typeof height === "number" ? `${height}px` : height;
 
   return (
     <div

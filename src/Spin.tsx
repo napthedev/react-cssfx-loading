@@ -26,8 +26,8 @@ const Spin: React.FC<SpinProps & React.HTMLProps<HTMLDivElement>> = ({
   duration = "1.2s",
   ...others
 }) => {
-  let resolvedWidth = typeof width === "number" ? `${width}px` : width;
-  let resolvedHeight = typeof height === "number" ? `${height}px` : height;
+  const resolvedWidth = typeof width === "number" ? `${width}px` : width;
+  const resolvedHeight = typeof height === "number" ? `${height}px` : height;
 
   return (
     <div
@@ -40,7 +40,7 @@ const Spin: React.FC<SpinProps & React.HTMLProps<HTMLDivElement>> = ({
           border-radius: 50%;
           width: ${resolvedWidth};
           height: ${resolvedHeight};
-          animation: ${spin} 1s linear infinite;
+          animation: ${spin} ${duration} linear infinite;
         ` + ` ${className}`
       }
     ></div>

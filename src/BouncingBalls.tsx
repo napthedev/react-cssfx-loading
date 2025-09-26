@@ -36,8 +36,8 @@ const BouncingBalls: React.FC<BouncingBallsProps & React.HTMLProps<HTMLDivElemen
   duration = "0.5s",
   ...others
 }) => {
-  let resolvedWidth = typeof width === "number" ? `${width}px` : width;
-  let resolvedHeight = typeof height === "number" ? `${height}px` : height;
+  const resolvedWidth = typeof width === "number" ? `${width}px` : width;
+  const resolvedHeight = typeof height === "number" ? `${height}px` : height;
 
   return (
     <div
